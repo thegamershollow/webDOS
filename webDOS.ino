@@ -3,8 +3,8 @@
 #include <OledDisplay.h>
 #include <RGB_LED.h>
 
-char ssid[] = "fluffyunicorns"; // wifi ssid
-char password[] = "_nmzY8vyVR7mpD.hPLqp.DdXC"; // wifi password
+char ssid[] = ""; // wifi ssid
+char password[] = ""; // wifi password
 int keyIndex = 0; // key index
 int status = WL_IDLE_STATUS; // set status variable to wireless idle status
 int port = 80; // set server port

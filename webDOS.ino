@@ -38,9 +38,9 @@ void setup() {
         Serial.println(ssid); // print ssid
         Screen.clean(); // clear screen
         Screen.print("Attemting to connect to SSID:", true); 
-        Screen.print(2,ssid,true);
+        Screen.print(2,ssid,true); // print ssid that shield is trying to connect to
         // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
-        status = WiFi.begin(ssid, password);
+        status = WiFi.begin(ssid, password); // connect to wifi network that is specified by the SSID variable and PASSWORD variable
         // wait 10 seconds for connection:
         delay(10000);
     }
@@ -49,7 +49,7 @@ void setup() {
     printWifiStatus(); 
 }
 void loop() {
-    Serial.println("listening for incoming clients");
+    Serial.println("Listening for incoming clients");
     // listen for incoming clients
     WiFiClient client = server.available();
     Serial.println("available");
@@ -77,7 +77,7 @@ void loop() {
                     client.println("<html lang='en-us'>");
                     client.println("<head>");
                     client.println("<meta charset='UTF-8'>");
-                    client.println("<title>DOSBox</title>"); // set webpage title
+                    client.println("<title>webDOS</title>"); // set webpage title
                     client.println("<style>html,body{height:100%;} #dos {width: 100%; height: 100%;}</style>");
                     client.println("<link rel='stylesheet' href='https://v8.js-dos.com/latest/js-dos.css'>");
                     client.println("<script src='https://v8.js-dos.com/latest/js-dos.js'></script>");

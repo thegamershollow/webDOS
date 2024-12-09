@@ -10,7 +10,7 @@ int status = WL_IDLE_STATUS; // set status variable to wireless idle status
 int port = 80; // set server port
 WiFiServer server(port); // init wifi server
 int btnAState; // create a variable for button A state
-int btnBState; // create a variable for button B stat
+int btnBState; // create a variable for button B state
 
 void setup() {
     Screen.init(); // init screen
